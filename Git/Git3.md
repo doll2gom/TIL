@@ -39,10 +39,13 @@ pull은 하나의 저장소를 가져오는 것으로 여러사람이 하나의 
 - 내가 한 로컬작업 공유?
   git push
 
-git clone <url> : 원격 저장소 복제
-git remote - v : 원격저장소 정보 확인
-git remote add origin <url> : 원격저장소 추가 (일반적으로 origin)
-git remote rm <원격저장소> : 원격저장소 삭제
+| 명령어                      | 내용                                |
+| --------------------------- | ----------------------------------- |
+| git clone <url>             | 원격 저장소 복제                    |
+| git remote - v              | 원격저장소 정보 확인                |
+| git remote add origin <url> | 원격저장소 추가 (일반적으로 origin) |
+| git remote rm <원격저장소>  | 원격저장소 삭제                     |
+
 git push 원격저장소> <브랜처-er/main 원격저장소에 push
 git pull<원격저장소><브랜치>
 원격저장소로부터 pull
