@@ -1,15 +1,12 @@
 # TIL
 
-## Today I Learn D+10
+## Today I Learn
 
-## week 1
+## week 3
 
-### Git & GitHub
+### Python
 
-- Git\_기초(basic)
-- GitHub
-- branch
-- pull request
+- 메서드(methods)
 
 ## week 2
 
@@ -19,3 +16,13 @@
 - python\_제어문(control statement)
 - 함수(function), if, for
 - 딕셔너리(dictionary), 모듈(module), 예외처리(error)
+- json
+
+## week 1
+
+### Git & GitHub
+
+- Git\_기초(basic)
+- GitHub
+- branch
+- pull request
