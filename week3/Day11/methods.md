@@ -29,19 +29,17 @@ type.methods()
 
 ## 문자열 변경
 
-| 문법                           | 설명                                       |
-| :----------------------------- | :----------------------------------------- |
-| s.replace(_old, new[, count]_) | 바꿀 대상 글자를 새로운 글자로 바꿔서 반환 |
-
-|
-|s.strip([chars]) |공백이나 특정 문자를 제거|
-|s.split (sep=None, maxsplit=-1) | 공백이나 특정 문자를 기준으로 분리|
-|'separator'.join([iterable]) | 구분자로 iterable을 합침 |
-|s.capitalize() |가장 첫 번째 글자를 대문자로 변경|
-|s.title() |'나 공백 이후를 대문자로 변경|
-|s.upper |모두 대문자로 변경|
-|s.lower() |모두 소문자로 변경|
-|s.swapcase() |대<->소문자 서로 변경|
+| 문법                            | 설명                                       |
+| :------------------------------ | :----------------------------------------- |
+| s.replace(_old, new[, count]_)  | 바꿀 대상 글자를 새로운 글자로 바꿔서 반환 |
+| s.strip([chars])                | 공백이나 특정 문자를 제거                  |
+| s.split (sep=None, maxsplit=-1) | 공백이나 특정 문자를 기준으로 분리         |
+| 'separator'.join([iterable])    | 구분자로 iterable을 합침                   |
+| s.capitalize()                  | 가장 첫 번째 글자를 대문자로 변경          |
+| s.title()                       | '나 공백 이후를 대문자로 변경              |
+| s.upper                         | 모두 대문자로 변경                         |
+| s.lower()                       | 모두 소문자로 변경                         |
+| s.swapcase()                    | 대<->소문자 서로 변경                      |
 
 # 시퀀스 - 리스트(List)
 
