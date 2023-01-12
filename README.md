@@ -7,10 +7,11 @@
 ### Python
 
 - 메서드(methods)
+- 사용자 정의 함수(definition), 범위(Scope)
 
 ## week 2
 
-### Python
+### Python basic
 
 - python\_기초(basic)
 - python\_제어문(control statement)
