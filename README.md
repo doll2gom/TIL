@@ -6,15 +6,34 @@
 
 <details markdown="1">
     <summary>week 6</summary>
-📅 23.01.30 ~ 02.03
+📅 23.02.06 ~ 02.10
+
+[230206](/week7/02.06/README.md)
 
 ### 코딩테스트 기초 알고리즘
 
-- 완전탐색
+10. [DFS](/week7/DFS.md)
+
+</details>
+
+<details markdown="1">
+    <summary>week 6</summary>
+📅 23.01.30 ~ 02.05
+
+[230205](/week6/02.05/README.md)
+[230204](/week6/02.04/README.md)
+[230203](/week6/02.03/README.md)
+[230202](/week6/02.02/README.md)
+[230201](/week6/02.01/README.md)
+
+### 코딩테스트 기초 알고리즘
+
+8. [완전탐색](/week6/Brute-force.py)
+9. [그래프](/week6/graph.md)
 
 ### 코딩테스트 기초 자료구조
 
-- 이차원 리스트
+7. 이차원 리스트
 
 </details>
 
@@ -24,8 +43,8 @@
 
 ### 코딩테스트 기초 자료구조
 
-- 스택, 큐 (Stack, Queue)
-- 힙, 셋 (Heap, Set)
+5. 스택, 큐 (Stack, Queue)
+6. 힙, 셋 (Heap, Set)
 
 </details>
 
@@ -35,14 +54,14 @@
 
 ### 코딩테스트 기초 자료구조
 
-- 시간복잡도, 빅오 표기법(Big-O)
-- 문자열(String)
-- 딕셔너리, 해시 (Dictionary)
+2. 시간복잡도, 빅오 표기법(Big-O)
+3. 문자열(String)
+4. 딕셔너리, 해시 (Dictionary)
 
 ### 코딩테스트 기본
 
-- 코딩테스트
-- 기본입출력
+1. 코딩테스트
+2. 기본입출력
 
 </details>
 
