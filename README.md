@@ -8,12 +8,19 @@
     <summary>week 6</summary>
 📅 23.02.06 ~ 02.10
 
-[230206](/week7/02.06/README.md)
+[230208](/week7/02.08/README.md)
 [230207](/week7/02.07/README.md)
+[230206](/week7/02.06/README.md)
+
+### 데이터베이스
+
+2. 관계형 데이터베이스
+1. 데이터베이스 기초
 
 ### 코딩테스트 기초 알고리즘
 
-10. [DFS](/week7/DFS.md)
+11. 구현
+12. [DFS](/week7/DFS.md)
 
 </details>
 
