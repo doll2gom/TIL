@@ -10,7 +10,7 @@
 
   - 저장과 조작(CRUD)
 
-- [관계형 데이터베이스와 용어](/week7/RDBMS.md)
+- [관계형 데이터베이스와 용어](/TIL/week7/RDBMS.md)
 
   1. Table (aka Relation)
   2. Field (aka Column, Attribute)
@@ -33,7 +33,7 @@
 
 - MySQL 다운로드 및 환경설정
 - Workbench 활용 가이드 작성해보기
-- [관계형 데이터베이스 용어 정리](/week7/workbench.md)
+- [관계형 데이터베이스 용어 정리](/TIL/week7/workbench.md)
 
 SQL 어디선가 많이 들어는 봤지만, 직접 공부해볼 엄두를 못 내고 있었다.
 언젠가 배워야 할 부분이라고 막연하게 생각하던 것을 이렇게 빨리 시작하게 된다니...! \
