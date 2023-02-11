@@ -49,27 +49,39 @@ import sys
 sys.stdin = open("input.txt", "r")
 
 def fibonacci(int):
-    # print(int)
     if int == 0:
         lst.append(0)
-        # print('1:::',0)
         return 0
     elif int == 1:
-        lst.append(1)
-        # print('2:::',1)
+        lst2.append(1)
         return 1
-    elif int >= 2:
-        # print('3:::::',fibonacci(int-1) + fibonacci(int-2))
-        return fibonacci(int-1) + fibonacci(int-2)
     else:
-        print(lst.count(0),lst.count(1))
+        return fibonacci(int-1) + fibonacci(int-2)
 
 N = int(sys.stdin.readline())
 for _ in range(N):
     n = int(sys.stdin.readline())
     lst = []
+    lst2 = []
     fibonacci(n)
-    print(lst.count(0), lst.count(1))
+    print(len(lst), len(lst2))
+
+for _ in range(int(sys.stdin.readline())):
+    for n in range(int(sys.stdin.readline())):
+        cnt_0 = 0
+        cnt_1 = 0
+        if n == 0:
+            cnt_0 += 1
+            n = 0
+        elif n == 1:
+            cnt_1 += 1
+            n = 1
+        else:
+            cnt_0 += n-1
+            cnt_1 += n-2
+            n = n-1 + n-2
+    print(n, ' : ', cnt_0, cnt_1)
+
 
 
 '''
