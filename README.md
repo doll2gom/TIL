@@ -5,14 +5,37 @@
 📆 2022.12.16 ~
 
 <details markdown="1">
-    <summary>week 6</summary>
-📅 23.02.06 ~ 02.10
+    <summary>week 8</summary>
+    
+📅 23.02.13 ~ 02.19
 
-[230210](/week7/02.10/README.md)
-[230209](/week7/02.09/README.md)
-[230208](/week7/02.08/README.md)
-[230207](/week7/02.07/README.md)
+📌 weekly goal\
+Solving all Bronze V step problems
+
+[230213](/week7/02.13/README.md)
+
+### SQL
+
+3. Filtering data
+4. Grouping data
+
+</details>
+
+<details markdown="1">
+    <summary>week 7</summary>
+📅 23.02.06 ~ 02.12
+
+[230211](/week7/02.11/README.md)\
+[230210](/week7/02.10/README.md)\
+[230209](/week7/02.09/README.md)\
+[230208](/week7/02.08/README.md)\
+[230207](/week7/02.07/README.md)\
 [230206](/week7/02.06/README.md)
+
+### SQL
+
+1. Querying data
+2. Sorting data
 
 ### 데이터베이스
 
@@ -30,10 +53,10 @@
     <summary>week 6</summary>
 📅 23.01.30 ~ 02.05
 
-[230205](/week6/02.05/README.md)
-[230204](/week6/02.04/README.md)
-[230203](/week6/02.03/README.md)
-[230202](/week6/02.02/README.md)
+[230205](/week6/02.05/README.md)\
+[230204](/week6/02.04/README.md)\
+[230203](/week6/02.03/README.md)\
+[230202](/week6/02.02/README.md)\
 [230201](/week6/02.01/README.md)
 
 ### 코딩테스트 기초 알고리즘
