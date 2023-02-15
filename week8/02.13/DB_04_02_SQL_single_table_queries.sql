@@ -144,28 +144,26 @@ FROM
 	orders
 GROUP BY
 	year(orderDate)
-ORDER BY
-	year DESC ;
 
--- # 16
--- SELECT 
--- 	productLine, MAX(quantityInStock) AS max_stock
--- FROM
--- 	products
--- GROUP BY
--- 	productLine
--- HAVING
--- 	max_stock < 9000;
---     
--- # 17
--- SELECT 
--- 	orderNumber,
---     SUM(quantityOrdered) AS itemsCount,
---     SUM(priceEach*quantityOrdered) AS total
--- FROM
--- 	orderdetails
--- GROUP BY
--- 	orderNumber
--- HAVING
--- 	itemsCount > 500
---     AND total > 50000;
+# 16
+SELECT 
+	productLine, MAX(quantityInStock) AS max_stock
+FROM
+	products
+GROUP BY
+	productLine
+HAVING
+	max_stock < 9000;
+    
+# 17
+SELECT 
+	orderNumber,
+    SUM(quantityOrdered ) AS itemsCount,
+    SUM(priceEach*quantityOrdered) AS total
+FROM
+	orderdetails
+GROUP BY
+	orderNumber
+HAVING
+	itemsCount > 500
+    AND total > 50000;
