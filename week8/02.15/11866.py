@@ -13,25 +13,34 @@ N, K = map(int,input(). split())
 K2 = K
 
 lst = [ i for i in range(1,int(N)+1)]
+# 1, 2, 3, 4, 5, 6, 7 // 7(N)%3(K) == 1 // 1,K+1
+#                        7//3 == 2
+# 1, 2, 4, 5, 7    // 6%3(K)
+# 1, 4, 5
+'''
+<3, 6, 2, 7, 5, 1, 4 >'''
+
 slst = sum(lst)
 lst2 = []
 a = []
 while True:
-    for v in len(lst)//K:
-        print(rest, v)
+    for v in range(len(lst)//K):
         for k in lst[K-1::K]:
             a.append(k)
-            print(k)
-            print(lst)
+            # print(k)
+            # print(lst)
             lst.remove(k)
-            print('22',a)
-            print(rest)
+            # print('22',a)
+            # print(rest)
     rest = len(lst)%K
     K -= rest
-    if lst == False:
+    print(rest, v)
+
+    if len(lst) == 0:
         break
 
 print(a)
+
 # while sum(lst) == 0:
 def josep(list1,K):
     a = []
@@ -43,8 +52,6 @@ def josep(list1,K):
         if len(list1) == 0:
             break
     return a
-
-
 
 for n in josep(lst, K):
     lst2.append(n)
