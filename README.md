@@ -8,11 +8,10 @@
     <summary>week 8</summary>
     
 📅 23.02.13 ~ 02.19
+[week8 folder](/week8/)
 
 📌 weekly goal\
 Solving all Bronze V step problems
-
-[230213](/week7/02.13/README.md)
 
 ### SQL
 
