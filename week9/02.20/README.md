@@ -3,6 +3,7 @@
 ### 🕘 오전 수업
 
 - SQL\
+  [수업내용](/week9/02.20/SQL_memo.md)
   [수업연습문제](/week9/02.20/SQL_note.sql)
 
 01 Transaction
