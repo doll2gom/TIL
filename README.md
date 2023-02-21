@@ -5,18 +5,32 @@
 📆 2022.12.16 ~
 
 <details markdown="1">
+    <summary>week 9</summary>
+    
+📅 23.02.20 ~ 02.26
+
+[week9 Folder](/week9/)
+
+### SQL
+
+9. Advanced 01, 02
+
+</details>
+
+<details markdown="1">
     <summary>week 8</summary>
     
 📅 23.02.13 ~ 02.19
-[week8 folder](/week8/)
-
-📌 weekly goal\
-Solving all Bronze V step problems
+[week8 Folder](/week8/)
 
 ### SQL
 
 3. Filtering data
 4. Grouping data
+5. Managing Tables
+6. Modifyingdata
+7. Multitable queries
+8. Nested queries
 
 </details>
 
