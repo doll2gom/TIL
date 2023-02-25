@@ -11,7 +11,7 @@
   [수업노트](/TIL/week8/02.16/SQL_memo.md)\
   [수업연습문제](/TIL/week8/02.16/SQL_class.sql)
 
-### 🕜 오후 실습 BOJ
+### 🕜 오후 실습
 
 [08_SQL 예제](/week8/02.16/DB_08_SQL_Nested_queries.sql)
 

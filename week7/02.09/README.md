@@ -8,7 +8,7 @@
 - SQL query문
   - [SELECT](SELECT_queries.sql) 기본 문법
 
-### 🕜 오후 실습 BOJ
+### 🕜 오후 실습
 
 - workbench를 사용한 SQL SELECT 문법 실습\
   [SQL SELECT queries](DB_04_01_SQL_single_table_queries.sqlsql)

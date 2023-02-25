@@ -6,7 +6,7 @@
   3. Filtering data\
   4. Grouping data
 
-### 🕜 오후 실습 BOJ
+### 🕜 오후 실습
 
 [SQL 예제](/TIL/week8/02.13/DB_04_02_SQL_single_table_queries.sql)
 

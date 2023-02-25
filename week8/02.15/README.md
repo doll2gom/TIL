@@ -10,7 +10,7 @@
   [수업노트](/week8/02.15/SQL_memo.md)\
   [수업연습문제](/week8/02.15/SQL_class.sql)
 
-### 🕜 오후 실습 BOJ
+### 🕜 오후 실습
 
 [07_SQL 예제](/week8/02.15/DB_07_SQL_Multi_table_queries.sql)
 

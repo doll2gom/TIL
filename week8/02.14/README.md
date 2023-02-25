@@ -18,7 +18,7 @@ DML(Data Manipulation Language)
 2. Update data in table
 3. Delete data from table
 
-### 🕜 오후 실습 BOJ
+### 🕜 오후 실습
 
 [05_SQL 예제](/week8/02.14/DB_05_SQL_Managing_table.sql)\
 [06_SQL 예제](/week8/02.14/DB_06_SQL_Modifying_data.sql)
