@@ -5,7 +5,7 @@
 HTML과 CSS [기초개념](/week9/02.22/Web01.md)\
 HTML과 CSS [사용해보기](/02.22/Document.html)
 
-### 🕜 오후 실습 BOJ
+### 🕜 오후 실습
 
 HTML로 팀 너머리스 소개 페이지 따라 만들기\
 [실습문제1](/02.22/Web01-1.html)\

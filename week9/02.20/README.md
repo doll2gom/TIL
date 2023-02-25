@@ -9,7 +9,7 @@
 01 Transaction
 02 Triggers
 
-### 🕜 오후 실습 BOJ
+### 🕜 오후 실습
 
 [프로그래머스 MySQL 문제 Lv.1,2](https://school.programmers.co.kr/learn/challenges?order=recent&languages=mysql&page=1&levels=3%2C4) 풀기
 
