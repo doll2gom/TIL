@@ -5,11 +5,38 @@
 📆 2022.12.16 ~
 
 <details markdown="1">
+    <summary>week 10</summary>
+    
+📅 23.02.27 ~ 03.05
+
+[week10](/week10/)
+
+### Web
+
+- Web project
+
+2. CSS Box model
+1. HTML, CSS 기초
+
+### SQL
+
+9. Advanced 01, 02
+
+</details>
+
+<details markdown="1">
     <summary>week 9</summary>
     
 📅 23.02.20 ~ 02.26
 
 [week9 Folder](/week9/)
+
+### Web
+
+- Web project
+
+2. CSS Box model
+1. HTML, CSS 기초
 
 ### SQL
 
