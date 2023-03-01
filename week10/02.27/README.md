@@ -2,7 +2,7 @@
 
 ### 🕘 오전 수업
 
-CSS Position [수업노트](CSS_Position.md)\
+CSS Position [수업노트](CSS_Position.md)
 
 - [positions](/week10/02.27/01.html)
 - [sticky](/week10/02.27/02.html)
