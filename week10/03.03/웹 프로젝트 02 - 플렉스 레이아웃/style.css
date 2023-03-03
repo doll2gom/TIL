@@ -1,0 +1,119 @@
+/* header */
+h3 {
+  margin-bottom: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span {
+  margin: 0.2rem;
+}
+
+.menu {
+}
+
+/* main */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 5%;
+}
+/* main__sidebar */
+.sidebar {
+  width: 150px;
+  flex-direction: column;
+  position: fixed;
+  top: 10rem;
+  margin-left: 1rem;
+  flex-grow: 0;
+}
+.sidebar__title {
+  margin-bottom: 1rem;
+}
+
+.sidebar__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nodecoration {
+  text-decoration: none;
+}
+
+/* main__content */
+.content {
+  margin-left: 180px;
+  flex-grow: 1;
+}
+.content__title {
+  border-bottom: 0.5px solid gray;
+  padding-bottom: 1px;
+}
+.content__container {
+}
+
+.content__container__title {
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.content__container__text {
+  font-size: small;
+  margin: 0.5rem 0rem;
+}
+.content__container__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-content: center; */
+  width: 300px;
+  border: 1px solid grey;
+  float: right;
+}
+.box__title {
+  background-color: rgb(220, 220, 220);
+  margin: 0.5rem;
+  text-align: center;
+  padding: 0.2rem 1rem;
+}
+.box__img {
+  width: 85%;
+  margin: 0 auto;
+}
+.box__text {
+  font-size: small;
+  margin: 0.5rem;
+}
+.text__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.text__title {
+  font-weight: bold;
+  margin-top: 0.2rem;
+}
+.text__detail {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  padding: 0rem;
+}
+
+/* footer */
+.footer {
+}
+/* 대표적인 semantic element
+
+- header
+- nav
+- main
+- article
+- section
+- aside
+- footer
+ */
