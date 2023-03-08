@@ -4,6 +4,24 @@
 
 📆 2022.12.16 ~
 
+### Web
+
+<details markdown="1">
+    <summary>week 11</summary>
+
+📅 23.03.06 ~ 03.12
+
+[week11](/week11/)
+
+### Web
+
+99 - UX & UI
+09 - Grid system for Responsive web
+08 - Fundamentals of Grid system
+07 - Fundamentals of Bootstrap
+
+</details>
+
 <details markdown="1">
     <summary>week 10</summary>
 
@@ -11,18 +29,18 @@
 
 [week10](/week10/)
 
+웹 프로젝트 02 - 플렉스 레이아웃
+
 ### Web
 
-- Web project
-
-2. CSS Box model
-1. HTML, CSS 기초
-
-### SQL
-
-9. Advanced 01, 02
+06 - Semantic Web
+05 - Flexible box for CSS layout
+04 - Floating for CSS layout
+03 - Positioning for CSS layout
 
 </details>
+
+### Database
 
 <details markdown="1">
     <summary>week 9</summary>
@@ -31,16 +49,14 @@
 
 [week9 Folder](/week9/)
 
-### Web
-
-- Web project
+웹 프로젝트 01 - 프로필 카드
 
 2. CSS Box model
 1. HTML, CSS 기초
 
 ### SQL
 
-9. Advanced 01, 02
+09 Advanced 01, 02
 
 </details>
 
@@ -52,14 +68,16 @@
 
 ### SQL
 
-3. Filtering data
-4. Grouping data
-5. Managing Tables
-6. Modifyingdata
-7. Multitable queries
-8. Nested queries
+08 Nested queries
+07 Multitable queries
+06 Modifyingdata
+05 Managing Tables
+04 Grouping data
+03 Filtering data
 
 </details>
+
+### Python
 
 <details markdown="1">
     <summary>week 7</summary>
@@ -74,13 +92,13 @@
 
 ### SQL
 
-1. Querying data
-2. Sorting data
+02 Sorting data
+01 Querying data
 
 ### 데이터베이스
 
-2. 관계형 데이터베이스
-1. 데이터베이스 기초
+- 관계형 데이터베이스
+- 데이터베이스 기초
 
 ### 코딩테스트 기초 알고리즘
 
@@ -166,6 +184,8 @@
 - [실습 프로젝트](https://github.com/doll2gom/PJT-01)
 
 </details>
+
+### Git & GitHub
 
 <details markdown="1">
     <summary>week 1</summary>
