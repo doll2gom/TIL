@@ -17,5 +17,3 @@ bootstrap Grid
 ## Daily study
 
 1. Daily Algorithm
-2. reading
-3.
