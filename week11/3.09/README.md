@@ -6,10 +6,10 @@
 2. 애자일 강의 듣기 + 함께 자라기 책 1페이지 읽기
 3. 깃헙 TIL 정리한 사진 인스타에 업로드
 
-## Day by day, You don't have to be the best
+### Day by day, You don't have to be the best
 
-### 매일 최고가 될 필요는 없어
+#### 매일 최고가 될 필요는 없어
 
-## You just get better and better
+### You just get better and better
 
-### 어제보다 점점 나아지면 돼
+#### 어제보다 점점 나아지면 돼
