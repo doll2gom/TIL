@@ -1,10 +1,9 @@
-# TIL 220312 SUN
+# TIL 230312 SUN
 
 ## 🧸 Daily study
 
 - 데일리 알고리즘 주간문제 풀기
   유니코드 [70강 하노이탑](https://www.youtube.com/watch?v=qbqz8fORtJk&list=PLBXuLgInP-5n2fvfXHU9mHVuWBgAKpHNi&index=71) 영상 참고해서 문제 풀이함
-- 책 읽기(함께 자라기, 정리하는 뇌)
 - 주간일기
 
 ## 머신러닝 관련 영상
