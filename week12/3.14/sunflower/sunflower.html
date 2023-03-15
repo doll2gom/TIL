@@ -47,7 +47,10 @@
       const prevButton = document.querySelector(".prev");
       const nextButton = document.querySelector(".next");
 
-      prevButton.addEventListener("click", () => {});
+      prevButton.addEventListener("click", () => {
+      if (index === 0) return
+      index -= 1
+      });
       nextButton.addEventListener("click", () => {});
 
       let index = 2;
