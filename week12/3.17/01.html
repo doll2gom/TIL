@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+  </head>
+  <body class="position-relative">
+    <!-- 버튼 -->
+    <header class="d-flex justify-content-center my-2 sticky-top bg-white">
+      <button class="btn btn-primary m-3 btn-lg" id="btn">생성</button>
+    </header>
+
+    <main class="container position-relative">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          aria-label="로또번호"
+          aria-describedby="basic-addon1" />
+      </div>
+    </main>
+    <!-- Lodash -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <!-- 번호 생성기 -->
+    <script>
+      // main  > btn 태그 생성
+      const main = document.querySelector("main");
+      const btn = document.querySelector("#btn");
+
+      // <!-- 눌렀을 때 랜덤 넘버 나옴 -->
+      btn.addEventListener("click", (e) => {
+        const div = document.createElement("div");
+        div.classList.add("d-flex", "justify-content-evenly", "mt-3");
+        div.setAttribute("style", "height: 90px; width: auto;");
+
+        // 번호 생성 로직
+        const randomNumberList = _.range(1, 46);
+        const sampleNumberList = _.sampleSize(randomNumberList, 6);
+        console.log(randomNumberList);
+        console.log(sampleNumberList);
+
+        const firstWinner = _.sampleSize(randomNumberList, 6);
+        console.log(firstWinner);
+
+        // 생성된 번호를 각각 div 태그 안에 넣고, 위 div에 추가
+        sampleNumberList.forEach((e) => {
+          const output = document.createElement("div");
+          output.classList.value =
+            "border border-dark-subtle rounded-circle border-3 text-center pt-3 fs-1";
+          output.setAttribute("style", "width: 90px; min-width: 90px;");
+          output.textContent = e;
+          div.appendChild(output);
+        });
+
+        // firstWinner.has(x)   // x가 firstWinner에 있는지 확인 -> boolean 값 반환
+        const setSampleNumberList = new Set(sampleNumberList);
+
+        let cnt = 0;
+        firstWinner.forEach((e) => {
+          // e가 sampleNumberList에 있는지 확인
+          if (setSampleNumberList.has(e)) {
+            // -> 있으면 true 없으면 false
+            cnt += 1;
+          }
+        });
+
+        const winDiv = document.createElement("div");
+        winDiv.classList.value =
+          "border border-dark-subtle rounded-circle border-3 text-center pt-3 fs-1";
+        winDiv.setAttribute("style", "width: 90px; min-width: 90px;");
+        if (cnt === 6) {
+          // 당첨 이라고 출력
+          winDiv.textContent = "당첨";
+        } else {
+          winDiv.textContent = "꽝";
+        }
+        div.appendChild(winDiv);
+        main.appendChild(div);
+      });
+
+      const inputDiv = document.createElement("div");
+      inputDiv.setAttribute("class", "input-group mb-3");
+      div.appendChild(inputDiv);
+      console.log(inputDiv);
+
+      const inputTag = document.querySelector("input");
+      inputTag.setAttribute("type", "number");
+      inputTag.setAttribute("class", "form-control");
+      inputTag.setAttribute("placeholder", "로또번호");
+      div.appendChild(inputT);
+      inputTag.addEventListener("input", (event) => {
+        const inputNumber = inputTag.value;
+        if (password.length >= 8 && password.length <= 16) {
+          // 1-3-1. 검사 통과 시 "유효한 비밀번호입니다."
+          fPW.innerText = "유효한 비밀번호입니다.";
+        } else {
+          // 1-3-2. 검사 불통과 시 "유효하지 않은 비밀번호입니다."
+          fPW.innerText = "유효하지 않은 비밀번호입니다.";
+        }
+      });
+      for (let i = 0; i < rray.lengtha; i++) {
+        const element = array[i];
+      }
+      // <div class="input-group mb-3">
+      //   <input
+      //     type="text"
+      //     class="form-control"
+      //     placeholder="Username"
+      //     aria-label="로또번호"
+      //     aria-describedby="basic-addon1"
+      //   />
+      // </div>;
+
+      const p = document.createElement("p");
+    </script>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
