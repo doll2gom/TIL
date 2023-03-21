@@ -13,7 +13,8 @@
 
 ### Python
 
-- [fibonacci memorization](/Python/fibonacci_memoization.md)
+- [callback function](/Python/fibonacci_memoization.md)
+- [fibonacci - memorization](/Python/fibonacci_memoization.md)
 - [String method](/Python/string_method.md)
 
 ### Django
