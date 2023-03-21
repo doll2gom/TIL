@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1500px;
+      }
+      /* sticky의 2가지 기능
+      1. 어느 임계점을 기준으로 고정위치가 됨 
+      ex) top: 0px 은 body를 기준으로한 top0 위치가 설정된 것
+      고정이 될 만한 임계점을 먼저 만들고 설장한다.
+      fixed는 다음sticky를 만나면 대체가 된다.
+      fixed보다 아이디어를 많이 넣어서 사용할 만하다.*/
+      .sticky {
+        position: sticky;
+        background-color: coral;
+        border: 1px solid black;
+        top: 0;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="sticky">sticky</div>
+      <p>aa</p>
+      <p>aa</p>
+      <p>aa</p>
+      <div class="sticky">sticky</div>
+      <p>aa</p>
+      <p>aa</p>
+      <div class="sticky">sticky</div>
+      <p>aa</p>
+      <p>aa</p>
+      <p>aa</p>
+    </div>
+  </body>
+</html>

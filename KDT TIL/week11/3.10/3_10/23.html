@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>airbnb</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <style>
+      .image_size {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+      }
+      .container__flex {
+        display: flex;
+      }
+      .container__flex > .big__box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        /* border: 1px solid black; */
+      }
+      .big__box > .box {
+        height: 115px;
+        width: 240px;
+        padding: 30px;
+      }
+      .container__image {
+        position: relative;
+      }
+      .image__text {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+      }
+      .background_size {
+        display: inline;
+        position: relative;
+        text-align: right;
+        align-items: end;
+        width: 80vh;
+      }
+      .area {
+        width: auto;
+      }
+      .ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
+      .area__text {
+        width: 100px;
+      }
+      .ellipsis__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .input_box {
+        position: absolute;
+        width: 500px;
+        background-color: white;
+      }
+      .image__box {
+        display: block;
+        margin-left: auto;
+        width: 75%;
+        height: 480px;
+        border-radius: 8px;
+      }
+      .image__box img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar sticky-top bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="./image/logo.png" alt="" style="width: 120px" />
+        <div class="px-2">
+          <a class="navbar-brand" href="#">호스팅 시작하기</a>
+          <a class="navbar-brand" href="#">회원 가입</a>
+          <a class="navbar-brand" href="#">로그인</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- container 1 -->
+    <div class="container">
+      <!-- inputbox_container 1 -->
+
+      <div class="input_box gird shadow rounded m-5 p-4">
+        <!-- title_inputbox -->
+        <div class="title">
+          <h2 class="fw-bold">한국의 휴가 임대 시설</h2>
+          <p class="text-body-tertiary">
+            에어비앤비에서 독특한 숙소를 예약하세요.
+          </p>
+        </div>
+
+        <!-- body_inputbox -->
+        <div class="inner_box row g-2">
+          <!-- location -->
+          <form class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="location"
+              placeholder="어디든지"
+              value="한국" />
+            <label for="location">위치</label>
+          </form>
+
+          <!-- datetime -->
+          <div class="input-group">
+            <form class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="location"
+                placeholder="날짜입력"
+                value="날짜입력" />
+              <label for="location">체크인</label>
+            </form>
+            <form class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="location"
+                placeholder="날짜입력"
+                value="날짜입력" />
+              <label for="location">체크아웃</label>
+            </form>
+          </div>
+
+          <!-- people -->
+          <div class="input-group">
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="selectadult">
+                  <option selected>성인</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label for="floatingSelectGrid">성인</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="selectchild">
+                  <option selected>어린이</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label for="selectchild">어린이</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- button -->
+          <button type="button" class="btn btn-danger">검색</button>
+        </div>
+      </div>
+    </div>
+    <!-- backgraond_img_container 1 -->
+    <div class="container">
+      <div>
+        <img class="image__box" src="./image/background.webp" alt="" />
+      </div>
+    </div>
+
+    <!-- container 2 -->
+
+    <div class="container mt-5">
+      <h2 class="mb-">최고 평점을 받은 한국의 휴가 숙소</h2>
+      <p class="mb-4">
+        위치, 청결도 등에서 게스트의 높은 평가를 받은 숙소입니다.
+      </p>
+      <div class="row">
+        <div class="col-md-4 container__image">
+          <img src="./image/01.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <p class="fw-bold area ellipsis__text mt-1">
+                전주시 완산구의 집 한옥스테이 “화응(花應)”화응(花應)
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+          </div>
+          <p class="area ellipsis">
+            전주시 완산구의 집 한옥스테이 “화응(花應)”화응(花應)은 전주의 한
+            가운데, 완산구 태평동에 위치하고 있습니다. 태평동은 과거 최초의
+            전주역과 연초제조창이 있던 교통과 상권의 중심이었으며 상인들의
+            마을인 주택가 골목에 그 당시 풍수와 지리를 활용하여 1969년 15평으로
+            건축되었습니다.
+          </p>
+          <div class="badge text-bg-light image__text">슈퍼호스트</div>
+        </div>
+        <div class="col-md-4 container__image">
+          <img src="./image/02.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <p class="fw-bold area ellipsis__text mt-1">
+                전주시 완산구의 집 한옥스테이 “화응(花應)”화응(花應)
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+          </div>
+          <p class="area ellipsis">
+            전주시 완산구의 집 한옥스테이 “화응(花應)”화응(花應)은 전주의 한
+            가운데, 완산구 태평동에 위치하고 있습니다. 태평동은 과거 최초의
+            전주역과 연초제조창이 있던 교통과 상권의 중심이었으며 상인들의
+            마을인 주택가 골목에 그 당시 풍수와 지리를 활용하여 1969년 15평으로
+            건축되었습니다.
+          </p>
+          <div class="badge text-bg-light image__text">슈퍼호스트</div>
+        </div>
+        <div class="col-md-4 container__image">
+          <img src="./image/03.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <p class="fw-bold area ellipsis__text mt-1">
+                전주시 완산구의 집 한옥스테이 “화응(花應)”화응(花應)
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+          </div>
+          <p class="area ellipsis">
+            전주시 완산구의 집 한옥스테이 “화응(花應)”화응(花應)은 전주의 한
+            가운데, 완산구 태평동에 위치하고 있습니다. 태평동은 과거 최초의
+            전주역과 연초제조창이 있던 교통과 상권의 중심이었으며 상인들의
+            마을인 주택가 골목에 그 당시 풍수와 지리를 활용하여 1969년 15평으로
+            건축되었습니다.
+          </p>
+          <div class="badge text-bg-light image__text">슈퍼호스트</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 3 -->
+    <div class="container mt-5">
+      <h2 class="mb-4">한국의 휴가용 임대 숙소의 인기 편의시설</h2>
+      <div class="container__flex fs-5">
+        <div class="big__box">
+          <div class="box shadow rounded-3 m-2">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              style="display: block; height: 30px; width: 30px; fill: #222"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false">
+              <path
+                d="M26 1a5 5 0 0 1 5 5c0 6.389-1.592 13.187-4 14.693V31h-2V20.694c-2.364-1.478-3.942-8.062-3.998-14.349L21 6l.005-.217A5 5 0 0 1 26 1zm-9 0v18.118c2.317.557 4 3.01 4 5.882 0 3.27-2.183 6-5 6s-5-2.73-5-6c0-2.872 1.683-5.326 4-5.882V1zM2 1h1c4.47 0 6.934 6.365 6.999 18.505L10 21H3.999L4 31H2zm14 20c-1.602 0-3 1.748-3 4s1.398 4 3 4 3-1.748 3-4-1.398-4-3-4zM4 3.239V19h3.995l-.017-.964-.027-.949C7.673 9.157 6.235 4.623 4.224 3.364l-.12-.07zm19.005 2.585L23 6l.002.31c.045 4.321 1.031 9.133 1.999 11.39V3.17a3.002 3.002 0 0 0-1.996 2.654zm3.996-2.653v14.526C27.99 15.387 29 10.4 29 6a3.001 3.001 0 0 0-2-2.829z"></path>
+            </svg>
+            <p>주방</p>
+          </div>
+          <div class="box shadow rounded-3 m-2">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              style="display: block; height: 30px; width: 30px; fill: #222"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false">
+              <path
+                d="m15.9999 20.33323c2.0250459 0 3.66667 1.6416241 3.66667 3.66667s-1.6416241 3.66667-3.66667 3.66667-3.66667-1.6416241-3.66667-3.66667 1.6416241-3.66667 3.66667-3.66667zm0 2c-.9204764 0-1.66667.7461936-1.66667 1.66667s.7461936 1.66667 1.66667 1.66667 1.66667-.7461936 1.66667-1.66667-.7461936-1.66667-1.66667-1.66667zm.0001-7.33323c3.5168171 0 6.5625093 2.0171251 8.0432368 4.9575354l-1.5143264 1.5127043c-1.0142061-2.615688-3.5549814-4.4702397-6.5289104-4.4702397s-5.5147043 1.8545517-6.52891042 4.4702397l-1.51382132-1.5137072c1.48091492-2.939866 4.52631444-4.9565325 8.04273174-4.9565325zm.0001-5.3332c4.9804693 0 9.3676401 2.540213 11.9365919 6.3957185l-1.4470949 1.4473863c-2.1746764-3.5072732-6.0593053-5.8431048-10.489497-5.8431048s-8.31482064 2.3358316-10.48949703 5.8431048l-1.44709488-1.4473863c2.56895177-3.8555055 6.95612261-6.3957185 11.93659191-6.3957185zm-.0002-5.3336c6.4510616 0 12.1766693 3.10603731 15.7629187 7.9042075l-1.4304978 1.4309874c-3.2086497-4.44342277-8.4328305-7.3351949-14.3324209-7.3351949-5.8991465 0-11.12298511 2.89133703-14.33169668 7.334192l-1.43047422-1.4309849c3.58629751-4.79760153 9.31155768-7.9032071 15.7621709-7.9032071z"></path>
+            </svg>
+            <p>무선 인터넷</p>
+          </div>
+          <div class="box shadow rounded-3 m-2">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              style="display: block; height: 30px; width: 30px; fill: #222"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false">
+              <path
+                d="M24 26c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 27.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 28c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 28c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 28c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 29.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 26c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 26c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 26zm0-5c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 22.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 23c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 23c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 23c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 24.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 21c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 21c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 21zM20 3a4 4 0 0 1 3.995 3.8L24 7v2h4v2h-4v5c.912 0 1.798.3 2.5.862l.171.147c.306.276.71.445 1.142.483L28 17.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 18c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 18c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 18c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 19.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 16c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492a3.956 3.956 0 0 1 2.444-1.002L16 16v-5H4V9h12V7a2 2 0 0 0-3.995-.15L12 7h-2a4 4 0 0 1 7-2.645A3.985 3.985 0 0 1 20 3zm-2 13.523c.16.091.313.194.459.307l.212.179c.35.316.826.49 1.33.491.439 0 .86-.134 1.191-.38l.137-.111c.206-.187.431-.35.67-.486V11h-4zM20 5a2 2 0 0 0-1.995 1.85L18 7v2h4V7a2 2 0 0 0-2-2z"></path>
+            </svg>
+            <p>수영장</p>
+          </div>
+          <div class="box shadow rounded-3 m-2">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              style="display: block; height: 30px; width: 30px; fill: #222"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false">
+              <path
+                d="M16 1c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C1 7.716 7.716 1 16 1zm0 2C8.82 3 3 8.82 3 16s5.82 13 13 13 13-5.82 13-13S23.18 3 16 3zm2 5a5 5 0 0 1 .217 9.995L18 18h-5v6h-2V8zm0 2h-5v6h5a3 3 0 0 0 .176-5.995z"></path>
+            </svg>
+            <p>건물 내 무료 주차</p>
+          </div>
+          <div class="box shadow rounded-3 m-2">
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              style="display: block; height: 30px; width: 30px; fill: #222"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false">
+              <path
+                d="M17 1v4.03l4.026-2.324 1 1.732L17 7.339v6.928l6-3.464V5h2v4.648l3.49-2.014 1 1.732L26 11.381l4.026 2.325-1 1.732L24 12.535l-6 3.464 6 3.465 5.026-2.902 1 1.732L26 20.618l3.49 2.016-1 1.732L25 22.351V27h-2v-5.804l-6-3.465v6.929l5.026 2.902-1 1.732L17 26.97V31h-2v-4.031l-4.026 2.325-1-1.732L15 24.66v-6.929l-6 3.464V27H7v-4.65l-3.49 2.016-1-1.732 3.489-2.016-4.025-2.324 1-1.732 5.025 2.901 6-3.464-6-3.464-5.025 2.903-1-1.732L6 11.38 2.51 9.366l1-1.732L7 9.648V5h2v5.803l6 3.464V7.339L9.974 4.438l1-1.732L15 5.03V1z"></path>
+            </svg>
+            <p>에어컨</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 4 -->
+    <div class="container mt-5">
+      <h2 class="mb-4">한국의 다른 근사한 휴가 숙소</h2>
+      <div class="row row-cols-md-4">
+        <div class="container__image">
+          <img src="./image/04.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <div class="badge text-bg-light image__text">슈퍼호스트</div>
+              <p class="fw-bold area ellipsis__text mt-1">
+                종로구의 개인실 spa#2 _Analog_Hanok_북촌
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+            <p>강원도 영월에 위치한 통나무집 A</p>
+          </div>
+        </div>
+        <div class="container__image">
+          <img src="./image/05.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <div class="badge text-bg-light image__text">슈퍼호스트</div>
+              <p class="fw-bold area ellipsis__text mt-1">
+                전주시 완산구의 게스트용 별채 전주 감성한옥 '라누이-블랑슈'
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+            <p>강원도 영월에 위치한 통나무집 A</p>
+          </div>
+        </div>
+        <div class="container__image">
+          <img src="./image/06.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <div class="badge text-bg-light image__text">슈퍼호스트</div>
+              <p class="fw-bold area ellipsis__text mt-1">
+                Gahoe-dong, Jongno-gu의 집 [aboheon / 아보헌] 안국역 도보 10분
+                독채 한옥 스테이
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+            <p>강원도 영월에 위치한 통나무집 A</p>
+          </div>
+        </div>
+        <div class="container__image">
+          <img src="./image/07.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <div class="badge text-bg-light image__text">슈퍼호스트</div>
+              <p class="fw-bold area ellipsis__text mt-1">
+                Mundeok-myeon, Boseong-gun의 전원주택 옛 정취를 물씬 느낄 수
+                있는 명품 고택! <목임당> 한옥 스테이 !
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+            <p>강원도 영월에 위치한 통나무집 A</p>
+          </div>
+        </div>
+        <div class="container__image">
+          <img src="./image/08.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <div class="badge text-bg-light image__text">슈퍼호스트</div>
+              <p class="fw-bold area ellipsis__text mt-1">
+                Hwachon-myeon, Hongcheon-gun의 집 NEW 스테이구구(Stay GUGU)
+                302호
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+            <p>강원도 영월에 위치한 통나무집 A</p>
+          </div>
+        </div>
+        <div class="container__image">
+          <img src="./image/09.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <div class="badge text-bg-light image__text">슈퍼호스트</div>
+              <p class="fw-bold area ellipsis__text mt-1">
+                Gyeongju-si의 집 스테이 쉼
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+            <p>강원도 영월에 위치한 통나무집 A</p>
+          </div>
+        </div>
+        <div class="container__image">
+          <img src="./image/10.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <div class="badge text-bg-light image__text">슈퍼호스트</div>
+              <p class="fw-bold area ellipsis__text mt-1">
+                경주의 개인실 경주 포레스트 팬션 101호/감상팬션/야외자쿠지/불멍
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+            <p>강원도 영월에 위치한 통나무집 A</p>
+          </div>
+        </div>
+        <div>
+          <img src="./image/11.webp" class="image_size rounded-4" alt="" />
+          <div class="row">
+            <div class="col-8">
+              <p class="fw-bold area ellipsis__text mt-1">
+                전주시 완산구의 게스트용 별채 전주 감성한옥 '라누이-블랑슈'
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="area__text ellipsis__text mt-1 mb-0">★4.94 (35)</p>
+            </div>
+            <p>강원도 영월에 위치한 통나무집 A</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
