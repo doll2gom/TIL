@@ -6,6 +6,7 @@
 ## 작성방법
 
 - 폴더명은 영문으로 파일 확장자는 `.md`로 한다.
+- README 항목의 순서는 오름차순으로 정렬한다.
 - 조금이라도 작고 사소한 학습부터 삽질한 내용까지 자세히 작성한다.
 - 커밋의 양보다 성장의 밀도를 우선적으로 생각한다.
 
@@ -15,6 +16,7 @@
 
 - [callback function](/Python/fibonacci_memoization.md)
 - [fibonacci - memorization](/Python/fibonacci_memoization.md)
+- [random_module](/Python/random_module.md)
 - [String method](/Python/string_method.md)
 
 ### Django
