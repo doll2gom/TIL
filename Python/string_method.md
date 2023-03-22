@@ -22,6 +22,16 @@ for a in A:
 # 1, 2, 3, 4, 5
 ```
 
+- BOJ 12605
+
+  ```python
+  import sys
+  N = int(sys.stdin.readline())
+  for case in range(1, N+1):
+    n = reversed(list(map(str, sys.stdin.readline().split())))
+    print(f'Case #{case}: {" ".join(n)}')
+  ```
+
 ## insert()
 
 내가 원하는 위치에 원하는 값을 끼워 넣을 때 사용한다.
