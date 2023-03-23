@@ -1,0 +1,6 @@
+{% extends 'base.html' %} {% block content %}
+<form action="{% url 'catch:catch' %}" method="GET">
+	<input type="text" name="content" />
+	<button type="submit">제출</button>
+</form>
+{% endblock content %}

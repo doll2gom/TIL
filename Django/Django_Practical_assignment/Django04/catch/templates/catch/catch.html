@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{{ data }}</h1>
+<form
+	action="{% url 'throw:throw' %}
+">
+	<button>뒤로가기</button>
+</form>
+{% endblock content %}
