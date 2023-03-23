@@ -1,0 +1,9 @@
+{% extends "articles/base.html" %} {% block content %} {% for i in data %}
+<h1>{{ i }}</h1>
+{% endfor %}
+<div>
+	<form action="/lotto-create/" method="GET">
+		<button type="submit" class="btn btn-primary">뒤로가기</button>
+	</form>
+</div>
+{% endblock content %}
