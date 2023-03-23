@@ -6,7 +6,7 @@
 # MVC(Model - View - Controller)디자인 패턴
 
 애플리케이션을 구조화하는 대표적인 패턴으로서 시각적 요소(사용자 인터페이스)와 뒤에서 실행되는 로직(데이터)을 서로 영향을 미치지 않고 독립적으로 분리하여 유지보수(서버)할 수 있도록 하기위해 만들어진 개념이다.
-![mvc](/%08Django/MVC.png)
+![mvc](/Django/MVC.png)
 
 # MTV(Model - Template - View 디자인 패턴
 
