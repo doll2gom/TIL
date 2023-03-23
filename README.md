@@ -12,18 +12,22 @@
 
 ## 분류
 
+### Django
+
+- [Create virtual environment\_가상환경 생성](/Django/%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [design pattern](/Django/Django_design_pattern.md)
+
+### JavaScript
+
+- [setTimeout](/JavaScript/setTimeout.md)
+
+### Markdown
+
+- [superscripts subscript\_첨자](/Markdown/Markdown_superscripts_subscripts.md)
+
 ### Python
 
 - [callback function](/Python/fibonacci_memoization.md)
 - [fibonacci - memorization](/Python/fibonacci_memoization.md)
 - [random_module](/Python/random_module.md)
 - [String method](/Python/string_method.md)
-
-### Django
-
-- [Django - 개발 환경 설정](/Django/%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- [Django - design pattern](/Django/Django_design_pattern.md)
-
-### Markdown
-
-- [마크다운 첨자](/Markdown/Markdown_superscripts_subscripts.md)
