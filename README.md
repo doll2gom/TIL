@@ -14,8 +14,14 @@
 
 ### Django
 
-- [Create virtual environment\_가상환경 생성](/Django/%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+- [Create application](/Django/Create_application.md)
+- [Create virtual environment\_가상환경 생성](/Django/Create_virtual_environment.md)
 - [design pattern](/Django/Django_design_pattern.md)
+- [Template](/Django/Template.md)
+
+### Django 실습
+
+- [Django - Practical assignment](/Django/Django_Practical_assignment/)
 
 ### JavaScript
 
