@@ -50,7 +50,8 @@ VSCode 상에서 1번 절차인 가상환경을 생성 명령을 입력한 후 `
 2. `.gitignore` 파일 생성
 
    - [gitignore io 생성 사이트](https://www.toptal.com/developers/gitignore)
-   - git에 commit할 때는 이런 환경설정<sub>설치된 프로그램 버전 등 잡다한 내용</sub>자체를 포함하지 않는다. &rArr; `.gitignore`에 담기는 내용
+   - git에 commit할 때는 이런 환경설정<sub>설치된 프로그램 버전 등 잡다한 내용</sub>자체를 포함하지 않는다.\
+     &rArr; `.gitignore`에 담기는 내용
 
 3. git add
 4. git commit
