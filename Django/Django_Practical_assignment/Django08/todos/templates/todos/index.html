@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block content %}
+<h1>index</h1>
+<a href="{% url 'todos:new' %}">할일생성</a>
+{% for todo in todos %}
+<a href="{% url 'todos:detail' todo.pk %}">{{ todo.title }}</a>
+<p>{{ todo.content }}</p>
+<hr />
+{% endfor %} {% endblock content %}

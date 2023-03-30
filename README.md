@@ -12,11 +12,17 @@
 
 ## 분류
 
+### CS
+
+- [HTTP](/CS/HTTP.md)
+
 ### Django
 
 - [Create application](/Django/Create_application.md)
 - [Create virtual environment\_가상환경 생성](/Django/Create_virtual_environment.md)
+- [CSRF](/Django/CSRF.md)
 - [design pattern](/Django/Django_design_pattern.md)
+- [HTTP method](/Django/HTTP_request_method.md)
 - [Template](/Django/Template.md)
 
 ### Django 실습

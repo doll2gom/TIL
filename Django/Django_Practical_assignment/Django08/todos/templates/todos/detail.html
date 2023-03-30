@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block content %}
+<h1>detail</h1>
+<p>{{ todo.pk }}번째 작성입니다.</p>
+<p>제목 : {{ todo.title }}</p>
+<p>내용 : {{ todo.content }}</p>
+<p>작성한 날 : {{ todo.created_at }}</p>
+<p>우선순위 : {{ todo.priority }}</p>
+<p>마감기한 : {{ todo.deadline }}</p>
+<form action="{% url 'todos:delete' todo.pk %}" method="POST">
+	{% csrf_token %}
+	<input type="submit" value="삭제" />
+</form>
+<a href="{% url 'todos:edit' todo.pk %}">수정</a>
+<a href="{% url 'todos:index' %}">돌아가기</a>
+{% endblock content %}

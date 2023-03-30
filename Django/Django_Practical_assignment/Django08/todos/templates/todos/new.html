@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+<h1>new</h1>
+<form action="{% url 'todos:create' %}" method="POST">
+	{% csrf_token %}
+	<div>
+		<label for="title">제목 : </label>
+		<input type="text" name="title" id="title" />
+	</div>
+	<div>
+		<label for="content">내용 : </label>
+		<textarea name="content" id="content" cols="30" rows="10"></textarea>
+	</div>
+	<div>
+		<label for="priority">우선순위 : </label>
+		<input type="number" name="priority" id="priority" />
+	</div>
+	<div>
+		<label for="deadline">마감기한 : </label>
+		<input type="date" name="deadline" id="deadline" />
+	</div>
+	<input type="checkbox" name="completed" />
+	{% comment %} 1. new에서 작성을 완료하고 제출을 하면 create 화면을 보여주며
+	DB에 저장을 했다. {% endcomment %}
+	<input type="submit" class="button" />
+</form>
+<a href="{% url 'todos:index' %}">[back]</a>
+{% endblock content %}
