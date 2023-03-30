@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+<h1>form</h1>
+<form action="{% url 'todos:create' %}" method="post">
+	<label for="your_name">Your name: </label>
+	<input
+		id="your_name"
+		type="text"
+		name="your_name"
+		value="{{ current_name }}" />
+	<input type="submit" value="OK" />
+</form>
+{% endblock content %}

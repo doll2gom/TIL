@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Todo list</h1>
+<p>id: {{todo.pk}}</p>
+<p>제목: {{todo.title}}</p>
+<p>내용: {{todo.content}}</p>
+<p>중요도: {{todo.priority}}</p>
+<p>마감기한: {{todo.deadline}}</p>
+<p>완료 여부: {{todo.completed}}</p>
+<a class="btn btn-primary" href="{% url 'todos:index' %}">뒤로가기</a>
+{% endblock content %}
