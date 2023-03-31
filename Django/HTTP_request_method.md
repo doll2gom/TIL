@@ -20,3 +20,4 @@ input의 submit/ button의 submit 둘 다 동일하게 작동한다.
 버튼태그의 사용의 예시는 광범위하다.
 
 delete 삭제하는 작엄은 수정의 영역이기 때문에, a태그 사용을 적절하지 않다.
+POST:생성Create,수정Update,삭제Delete
