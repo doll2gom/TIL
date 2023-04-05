@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>detail</h1>
+<h5>{{ todo.pk }}번째 할 일</h5>
+<p>{{ todo.title }}</p>
+<p>{{ todo.content }}</p>
+<p>{{ todo.completed }}</p>
+<p>{{ todo.priority }}</p>
+<p>{{ todo.created_at }}</p>
+<p>{{ todo.deadline }}</p>
+<form action="{% url 'todos:delete' todo.pk %}" method="POST">
+	{% csrf_token %}
+	<input type="submit" value="delete" />
+</form>
+<a href="{% url 'todos:update' todo.pk %}">update</a>
+<a href="{% url 'todos:index' %}">back</a>
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Todo List</h1>
+<a href="{% url 'todos:create' %}">create</a>
+<hr />
+{% for todo in todos %}
+<p>{{ todo.pk }}번</p>
+<p>
+	<a href="{% url 'todos:detail' todo.pk %}">{{ todo.title }}</a>
+</p>
+<p>{{ todo.deadline }}</p>
+{% endfor %} {% endblock content %}

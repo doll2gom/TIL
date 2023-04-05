@@ -1,0 +1,6 @@
+{
+	"debug.terminal.clearBeforeReusing": false,
+	"terminal.integrated.allowMnemonics": false,
+	"terminal.integrated.confirmOnKill": "editor",
+	"terminal.integrated.cwd": ""
+}
