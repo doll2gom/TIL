@@ -79,81 +79,95 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
 
-		<!-- Modal -->
-		<div
-			class="modal fade"
-			id="Modal"
-			tabindex="-1"
-			aria-labelledby="logInModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title fs-5" id="logInModalLabel">Log In</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="modal"
-							aria-label="Close"></button>
-					</div>
+			<!-- Modal -->
+			<div
+				class="modal fade"
+				id="Modal"
+				tabindex="-1"
+				aria-labelledby="logInModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title fs-5" id="logInModalLabel">Log In</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
 
-					<!-- Model body -->
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-md-6">
-								<button type="button" class="btn btn-outline-dark">
-									Log in with Google
-								</button>
-								<button type="button" class="btn btn-outline-dark">
-									Log in with E-mail
-								</button>
-							</div>
-							<div class="col-md-6">
-								<button type="button" class="btn btn-outline-dark">
-									Sign Up with E-mail
-								</button>
+						<!-- Model body -->
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-6">
+									<button type="button" class="btn btn-outline-dark">
+										Log in with Google
+									</button>
+									<button type="button" class="btn btn-outline-dark">
+										Log in with E-mail
+									</button>
+								</div>
+								<div class="col-md-6">
+									<button type="button" class="btn btn-outline-dark">
+										Sign Up with E-mail
+									</button>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="modal-footer">
-						<button
-							type="button"
-							class="btn btn-secondary"
-							data-bs-dismiss="modal">
-							Close
-						</button>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-bs-dismiss="modal">
+								Close
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- contents -->
+		</nav>
+
+		<!-- Page Content -->
 		<div class="container my-3">
 			<div class="row">
-				<div class="col-md-4 col-lg-4">
+				<!-- Post Content -->
+				<div class="col-md-8 col-lg-8">
 					<h1>Blog</h1>
-					<div class="card mb-4">
-						<div class="card mb-4">
-							<a href="#!">
-								{% for p in post_list %}
+					<div class="mb-4">
+						{% for p in post_list %}
+						<div class="card mb-4 bg-body-tertiary">
+							<div class="card">
+								{% if p.head_image %}
 								<img
 									class="card-img-top"
-									src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg"
-									alt="..."
-							/></a>
-							<div class="card-body">
-								<h2 class="card-title">{{ p.title }}</h2>
-								<p class="card-text">{{ p.content }}</p>
-								<a class="btn btn-primary" href="{{ p.get_absolute_url }}"
-									>Read more →</a
-								>
-								<div class="small text-muted">
-									Posted on {{ p.created_at }} by <a href="#">작성자명</a>
+									src="{{ p.head_image.url }}"
+									alt="{{ p }} head image" />
+								{% else %}
+								<img
+									class="card-img-top"
+									src="https://picsum.photos/seed/{{ p.id }}/800/200"
+									alt="random_image" />
+								{% endif %}
+								<div class="card-body m-1">
+									<h2 class="card-title">{{ p.title }}</h2>
+									{% if p.hook_text %}
+									<h5 class="text-muted">{{ p.hook_text }}</h5>
+									{% endif %}
+									<!-- 앞에서부터 45개 단어만 출력하도록 설정 -->
+									<p class="card-text">{{ p.content | truncatewords:45 }}</p>
+									<a class="btn btn-primary" href="{{ p.get_absolute_url }}"
+										>Read more →</a
+									>
 								</div>
 							</div>
-							{% endfor %}
+							<div class="small text-muted m-3">
+								Posted on {{ p.created_at }} by <a href="#">작성자명</a>
+							</div>
 						</div>
+
+						{% endfor %}
 					</div>
 
 					<!-- Pagination-->

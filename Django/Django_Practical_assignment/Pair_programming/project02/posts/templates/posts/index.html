@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>index</h1>
+  {% for post in posts  %}
+  글 번호 - <a href="{% url 'posts:detail' post.pk %}" >{{post.pk}}</a>/ 카테고리 - {{ post.category }}<hr><br>
+  {% endfor %}
+
+  {% comment %} {% if request.user.is_authenticated %}
+    <hr>
+    {% for post in posts  %}
+      글 번호 - <a href="{% url 'posts:detail' post.pk %}" >{{post.pk}}</a>/ 카테고리 - {{ post.category }}<hr><br>
+    {% endfor %}
+  {% else %}
+    {% for post in posts  %}
+      글 번호 - <a href="{% url 'posts:detail' post.pk %}" >{{post.pk}}</a>/ 카테고리 - {{ post.category }}<hr><br>
+    {% endfor %} {% endcomment %}
+    {% comment %} <p>방문해주셔서 감사합니다.</p><p>로그인을 진행해 주세요.</p> {% endcomment %}
+  {% comment %} {% endif %} {% endcomment %}
+
+{% endblock content %}

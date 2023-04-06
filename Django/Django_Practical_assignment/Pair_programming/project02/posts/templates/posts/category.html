@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<hr>
+{% comment %} {% if subject == '개발' %}
+{% for post in posts_DV  %}
+글 번호 - <a href="{% url 'posts:detail' post.pk %}" >{{ post.pk }}</a>/ 카테고리 - {{ post.category }}<hr><br>
+{% endfor %}
+{% elif subject == 'CS' %}
+{% for post in posts_CS  %}
+글 번호 - <a href="{% url 'posts:detail' post.pk %}" >{{ post.pk }}</a>/ 카테고리 - {{ post.category }}<hr><br>
+{% endfor %}
+{% elif subject == '신기술' %}
+{% for post in posts_NT  %}
+글 번호 - <a href="{% url 'posts:detail' post.pk %}" >{{ post.pk }}</a>/ 카테고리 - {{ post.category }}<hr><br>
+{% endfor %}
+{% endif %} {% endcomment %}
+
+{% for post in posts %}
+글 번호 - <a href="{% url 'posts:detail' post.pk %}" >{{ post.pk }}</a>/ 카테고리 - {{ post.category }}<hr><br>
+{% endfor %}
+
+{% endblock content %}
