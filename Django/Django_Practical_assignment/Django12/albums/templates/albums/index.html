@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %} {% block style %}
+<style>
+	.index-img {
+		width: 20vh;
+	}
+	body {
+		margin: 10px;
+	}
+</style>
+{% endblock style %}{% block content %}
+<h1>Home</h1>
+<p><a href="{% url 'albums:create' %}" role="button">Home</a></p>
+<img class="index-img" src="{% static 'albums/photo02.jpeg' %}" alt="img" />
+<div class="index-img">
+	<hr />
+	{% for album in albums %}
+	<p>
+		<a href="{% url 'albums:detail' album.pk %}"
+			>{{ album.content }}
+			<br />
+			<img class="index-img" src="{{ album.image.url }}" alt="img" />
+		</a>
+	</p>
+</div>
+{% endfor %} {% endblock content %}

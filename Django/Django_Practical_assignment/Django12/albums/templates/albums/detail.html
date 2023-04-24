@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<h1>detail</h1>
+<p>번호 : {{ album.pk }}</p>
+<p>내용 : {{ album.content }}</p>
+{% comment %}
+<form action="{% url  %}"></form>
+{% endcomment %}
+<img src="{{ album.image.url }}" alt="img" />
+<p>작성일 : {{ album.created_at }}</p>
+<p>수정일 : {{ album.updated_at }}</p>
+<p>by {{ album.author }}</p>
+<a href="{% url 'albums:index' %}" role="button">Home</a>
+{% endblock content %}

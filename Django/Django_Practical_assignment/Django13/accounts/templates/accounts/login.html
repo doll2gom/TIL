@@ -1,0 +1,9 @@
+{% extends 'login_base.html' %} {% block content %}
+<h1>Login</h1>
+<form action="{% url 'accounts:login' %}" method="POST">
+	{% csrf_token %} {{ form.as_p }}
+	<div class="d-grid gap-2">
+		<input class="btn btn-dark" type="submit" value="login" />
+	</div>
+</form>
+{% endblock content %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Detail</h1>
+<p>글 번호 - {{post.pk}}</p>
+<p>글 제목 - {{post.title}}</p>
+<p>글 내용 - {{post.content}}</p>
+<p>글 카테고리 - {{post.category}}</p>
+
+{% if post.image %}
+
+<p>
+	이미지: <br /><img
+		src="{{ post.image.url}}"
+		alt="{{ post.title }}"
+		class="img-fluid rounded" />
+</p>
+
+{% comment %} {% else %}
+<p>랜덤이미지 입니다!</p>
+<p>
+	랜덤: <br /><img
+		src="https://source.unsplash.com/category/nature/1600x900"
+		alt="{{ post.title }}"
+		class="img-fluid rounded" />
+</p>
+{% endcomment %} {% endif %}
+
+<a href="{% url 'posts:update' post.pk %}"><button>글 수정</button></a>
+<a href="{% url 'posts:index' %}"><button>Home</button></a>
+<form action="{% url 'posts:delete' post.pk %}" method="POST">
+	{% csrf_token %}
+	<input type="submit" value="글 삭제" />
+</form>
+{% endblock content %}

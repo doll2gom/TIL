@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% load static %} {% block style %} content { margin:
+5rem; } {% endblock style %} {% block content %}
+<div class="position-relative p-3">
+	<div class="position-absolute">
+		<h1>Detail review</h1>
+		<p>Movie{{ review.title }}</p>
+		<p>story{{ review.content }}</p>
+		{% if review.image %}
+		<img src="{{ review.image.url }}" alt="img" class="img-fluid rounded" />
+		{% else %}
+		<p>
+			랜덤:
+			<br />
+			<img
+				src="https://source.unsplash.com/category/nature/1600x900"
+				alt="{{ post.title }}"
+				class="img-fluid rounded" />
+		</p>
+		{% endif %} {% comment %}
+		<p>작성일: {{ review.created_at }}</p>
+		<p>수정일: {{ review.updated_at }}</p>
+		{% endcomment %}
+		<a
+			href="{% url 'reviews:update' review.pk %}"
+			class="btn btn-success"
+			role="button"
+			>수정하기</a
+		>
+		<a href="{% url 'reviews:index' %}" class="btn btn-success" role="button"
+			>Home</a
+		>
+		<form action="{% url 'reviews:delete' review.pk  %}" method="POST">
+			{% csrf_token %}
+			<input class="btn btn-secondary" type="submit" value="삭제하기" />
+		</form>
+		<hr />
+
+		<!--  comment -->
+		<h4>댓글 목록</h4>
+		<ul>
+			{% for comment in comments %}
+			<li>
+				{{ comment.content }}
+				<form
+					action="{% url 'reviews:comment_delete' review.pk comment.pk %}"
+					method="POST">
+					{% csrf_token %}
+					<input class="btn btn-success" type="submit" value="삭제" />
+				</form>
+			</li>
+			{% endfor %}
+		</ul>
+		<hr />
+		<form action="{% url 'reviews:comment_create' review.pk %}" method="POST">
+			{% csrf_token %} {{ comment_form }}
+			<input type="submit" />
+		</form>
+	</div>
+</div>
+{% endblock content %}
