@@ -10,10 +10,11 @@
 
 # QuerySet API
 
-쿼리셋 api의 구성은 다음과 같다.
+Django ORM에서 데이터를 조회, 수정, 삭제하는 도구로써,\
+SQL 쿼리문을 직접 작성하지 않아도 Python코드로 데이터에 접근할 수 있게 된다.
 
-장고에서 쿼리문을 사용하기 위해 이러한 규칙을 사용한다.
-
+쿼리셋 api의 구성은 다음과 같다.\
+장고에서 쿼리문을 사용하기 위해 이러한 규칙을 사용한다.\
 핵심은 마지막에 작성하는 구문에 따라 데이터 베이스를 조작하게 된다.
 
 `model class`.`manager`.`QuerySetAPI`
@@ -37,7 +38,7 @@ Django ORM을 통해 만들어진 자료형
 
 ---
 
-[ORM read](/Django/ORM_method_get_post.md)
+[ORM read](/Django/ORM_Read.md)
 
 ### ORM, QuerySet API를 사용하는 이유 
 - 개발자가 데이터와 직접 상호작용하지 않아도 됨

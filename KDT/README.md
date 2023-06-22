@@ -1,8 +1,9 @@
 # TIL
 
-## KDT 풀스택(Python)
+<details markdown="1">
+<summary>KDT 풀스택(Python)</summary>
 
-📆 2022.12.16 ~
+📆 2022.12.16 ~ 2023.06.16
 
 ### Django
 
@@ -182,5 +183,7 @@
 - [branch](/TIL/week1/branch)
 - [pull request](https://github.com/doll2gom/2nd-start)
 - 특강01
+
+</details>
 
 </details>

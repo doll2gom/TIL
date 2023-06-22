@@ -31,7 +31,3 @@ def GCD(a, b):
         return a
     return GCD(r, a)
 ```
-
-```
-
-```
