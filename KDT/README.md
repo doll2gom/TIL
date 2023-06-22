@@ -10,9 +10,9 @@
 <details markdown="1">
     <summary>week 13</summary>
 
-03.20 ~ 03.26 [week13](/week13/)
+03.20 ~ 03.26 [week13](./week13/README.md)
 
-[01 - 가상환경 설정 루틴](/%08Django/%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+[01 - 가상환경 설정 루틴](./week13/3.20/Django01-Django%26Framework/%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
 
 </details>
 
@@ -21,7 +21,7 @@
 <details markdown="1">
     <summary>week 12</summary>
 
-03.13 ~ 03.19 [week12](/week12/)
+03.13 ~ 03.19 [week12](./week12/README.md)
 
 07 - Controlling event\
 06 - Array\
@@ -36,7 +36,7 @@
 <details markdown="1">
     <summary>week 11</summary>
 
-03.06 ~ 03.12 [week11](/week11/)
+03.06 ~ 03.12 [week11](./week11/README.md)
 
 99 - UX & UI\
 09 - Grid system for Responsive web\
@@ -48,10 +48,10 @@
 <details markdown="1">
     <summary>week 10</summary>
 
-02.27 ~ 03.05 [week10](/week10/)
+02.27 ~ 03.05 [week10](./week10/README.md)
 
 웹 프로젝트 02 - 플렉스 레이아웃
-[click](/week10/03.03/%EC%9B%B9%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%2002%20-%20%ED%94%8C%EB%A0%89%EC%8A%A4%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/)
+[click](./week10/README.md03.03/%EC%9B%B9%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%2002%20-%20%ED%94%8C%EB%A0%89%EC%8A%A4%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/)
 
 06 - Semantic Web\
 05 - Flexible box for CSS layout\
@@ -65,9 +65,9 @@
 <details markdown="1">
     <summary>week 9</summary>
     
-02.20 ~ 02.26 [week9](/week9/)
+02.20 ~ 02.26 [week9](./week9/README.md)
 
-웹 프로젝트 01 - 프로필 카드 [click](/week9/02.24/HTMLproject/)
+웹 프로젝트 01 - 프로필 카드 [click](./week9/README.md02.24/HTMLproject/)
 
 02 - CSS Box model\
 01 - HTML, CSS 기초
@@ -79,7 +79,7 @@
 <details markdown="1">
     <summary>week 8</summary>
     
-02.13 ~ 02.19 [week8 Folder](/week8/)
+02.13 ~ 02.19 [week8 Folder](./week8/README.md)
 
 08 Nested queries\
 07 Multitable queries\
@@ -95,7 +95,7 @@
 <details markdown="1">
     <summary>week 7</summary>
 
-02.06 ~ 02.12 [week7](/week7/)
+02.06 ~ 02.12 [week7](./week7/README.md)
 
 02 Sorting data\
 01 Querying data
@@ -104,7 +104,7 @@
 - 데이터베이스 기초
 
 11 구현\
-12 [DFS](/week7/DFS.md)
+12 [DFS](./week7/README.mdDFS.md)
 
 </details>
 
@@ -113,8 +113,8 @@
 
 01.30 ~ 02.05
 
-09 [그래프](/week6/graph.md)\
-08 [완전탐색](/week6/Brute-force.py)
+09 [그래프](./week6/README.mdgraph.md)\
+08 [완전탐색](./week6/README.mdBrute-force.py)
 
 07 이차원 리스트
 
