@@ -40,9 +40,10 @@
 
 - [callback function](/Python/fibonacci_memoization.md)
 - [fibonacci - memorization](/Python/fibonacci_memoization.md)
+- [list_method](/Python/list_method.md)
 - [random_module](/Python/random_module.md)
-- [String method](/Python/string_method.md)
-- [String Operator](/Python/string_operator.md)
+- [string method](/Python/string_method.md)
+- [string Operator](/Python/string_operator.md)
 
 
 # KDT 풀스택(Python) 
